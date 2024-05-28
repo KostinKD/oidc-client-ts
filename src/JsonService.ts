@@ -138,6 +138,7 @@ export class JsonService {
         const headers: HeadersInit = {
             "Accept": this._contentTypes.join(", "),
             "Content-Type": "application/x-www-form-urlencoded",
+            "Referer": url,
             ...extraHeaders,
         };
         if (basicAuth !== undefined) {
