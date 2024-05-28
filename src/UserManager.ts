@@ -185,7 +185,7 @@ export class UserManager {
      *
      * @see {@link UserManager.signinCallback}
      */
-    public async signinRedirectCallback(url = window.location.href): Promise<User> {
+    public async signinRedirectCallback(url: string): Promise<User> {
         const logger = this._logger.create("signinRedirectCallback");
         const user = await this._signinEnd(url);
         if (user.profile && user.profile.sub) {

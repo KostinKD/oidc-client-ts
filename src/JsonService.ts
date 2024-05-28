@@ -139,6 +139,7 @@ export class JsonService {
             "Accept": this._contentTypes.join(", "),
             "Content-Type": "application/x-www-form-urlencoded",
             "Referer": url,
+            "Test": "test",
             ...extraHeaders,
         };
         if (basicAuth !== undefined) {

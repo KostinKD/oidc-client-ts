@@ -981,7 +981,7 @@ export class UserManager {
     signinPopup(args?: SigninPopupArgs): Promise<User>;
     signinPopupCallback(url?: string, keepOpen?: boolean): Promise<void>;
     signinRedirect(args?: SigninRedirectArgs): Promise<void>;
-    signinRedirectCallback(url?: string): Promise<User>;
+    signinRedirectCallback(url: string): Promise<User>;
     signinResourceOwnerCredentials({ username, password, skipUserInfo, }: SigninResourceOwnerCredentialsArgs): Promise<User>;
     signinSilent(args?: SigninSilentArgs): Promise<User | null>;
     signinSilentCallback(url?: string): Promise<void>;
